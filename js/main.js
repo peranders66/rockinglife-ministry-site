@@ -1,0 +1,5 @@
+var ef=document.getElementById('ef');
+if(ef){function ce(){var e=document.createElement('div');e.className='ep';var x=Math.random()*100,s=Math.random()*3+1.5,d=Math.random()*8+6,dl=Math.random()*4;e.style.cssText='left:'+x+'%;bottom:-10px;width:'+s+'px;height:'+s+'px;animation-duration:'+d+'s;animation-delay:'+dl+'s;filter:blur('+(Math.random()>.5?.5:0)+'px);background:'+(Math.random()>.3?'var(--ember)':'var(--eg)')+';';ef.appendChild(e);setTimeout(function(){e.remove()},(d+dl)*1000)}for(var i=0;i<25;i++)ce();setInterval(ce,400)}
+var obs=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+var ae=document.querySelectorAll('[data-a]');for(var j=0;j<ae.length;j++)obs.observe(ae[j]);
+var an=document.querySelectorAll('a[href^="#"]');for(var k=0;k<an.length;k++){an[k].addEventListener('click',function(e){e.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})}
