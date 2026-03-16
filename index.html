@@ -9,13 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<style>
+.home-testimony{display:grid;grid-template-columns:4px 1fr;gap:2.5rem;margin-top:3rem}
+.home-tl{background:linear-gradient(180deg,var(--ember),var(--ed),transparent);border-radius:2px}
+.home-tq{font-family:var(--fd);font-size:clamp(1.1rem,2.2vw,1.4rem);font-weight:400;font-style:italic;line-height:1.7;color:var(--parch);margin-bottom:1rem}
+.home-ta{font-size:.85rem;color:var(--wg)}.home-ta strong{color:var(--eg);font-weight:600}
+.home-tc{margin-top:.75rem;font-size:.85rem;font-weight:300;color:var(--wgl);line-height:1.7}
+.pain-block{padding:2.5rem 3rem;border-left:3px solid var(--ember);background:rgba(212,132,42,.04);margin-top:3rem}
+.pain-block p{font-size:1.05rem;font-weight:300;line-height:1.8;color:var(--wgl)}
+.pain-block p strong{color:var(--parch);font-weight:400}
+@media(max-width:600px){.home-testimony{grid-template-columns:1fr}.home-tl{display:none}.pain-block{padding:2rem}}
+</style>
 </head>
 <body>
 <div class="grain"></div>
 <nav>
   <a href="/" class="nav-logo">Rocking <span>Life</span></a>
   <ul class="nav-links">
-    <li><a href="/about/" class="">About</a></li>
+    <li><a href="/about/">About</a></li>
     <li><a href="/forge-groups/">FORGE Groups</a></li>
     <li><a href="/give/" class="nav-cta">Support Us</a></li>
   </ul>
@@ -37,16 +48,31 @@
   <div class="si">
     <div class="slbl">Who We Are</div>
     <p class="ci" data-a>We ignite and inspire the hearts of men. One friend, one conversation, and one transformed life at a time.</p>
+
+    <div class="pain-block" data-a>
+      <p>Most Christian men go to church, read their Bible, and still feel like something is missing. <strong>The faith feels routine. The friendships stay shallow. And nobody talks about it.</strong> Rocking Life exists because we believe men were made for more than going through the motions — and because transformation happens when men stop carrying it alone.</p>
+    </div>
+
     <div class="cg">
       <div class="cb" data-a>
         <h3>What We Believe</h3>
         <p>The Holy Spirit transforms men. We create the conditions — honest relationships, consistent community, and Christ-centered accountability — and trust God to do what only He can do.</p>
       </div>
       <div class="cb" data-a>
-        <h3>How We're Different</h3>
-        <p>Rocking Life is invite-only. Every man who joins is personally invited by someone who already walks with us. No mass marketing. No open enrollment. That's by design.</p>
+        <h3>How We’re Different</h3>
+        <p>Rocking Life is invite-only. Every man who joins is personally invited by someone who already walks with us. No mass marketing. No open enrollment. That’s by design.</p>
       </div>
     </div>
+
+    <div class="home-testimony" data-a>
+      <div class="home-tl"></div>
+      <div>
+        <div class="home-tq">"Every time you have doubt about Rocking Life, I want you to remember me. Todd brought me to the group. But you created the group that he brought me to. And it has changed my life."</div>
+        <div class="home-ta"><strong>Joe</strong> &mdash; Rocking Life Member</div>
+        <p class="home-tc">Joe and Todd were friends for 15 years but never talked about faith. When Todd invited Joe to his FORGE group, Joe almost drove away from the parking lot. He stayed. Within months, the Holy Spirit transformed both men’s lives completely.</p>
+      </div>
+    </div>
+
     <div class="pc" data-a>
       <h3>Our Story</h3>
       <p>It started with a fire in 1999 and seven men who showed up in 2015. Learn how Rocking Life began and why it exists.</p>
@@ -77,7 +103,7 @@
       <div class="dt">
         <div class="slbl">Support the Mission</div>
         <h2>Help Us Reach <em>More Men</em></h2>
-        <p>Rocking Life is a 501(c)(3) nonprofit. We don't charge men to join. Your gift goes directly toward training and equipping men to disciple others.</p>
+        <p>Rocking Life is a 501(c)(3) nonprofit. We don’t charge men to join. Your gift goes directly toward training and equipping men to disciple others.</p>
         <a href="/give/" class="btn" style="margin-top:1rem">Donate Now &rarr;</a>
       </div>
       <div class="dcard">
