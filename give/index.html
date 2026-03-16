@@ -10,27 +10,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 <style>
-.give-hero{text-align:center;padding:4rem 2rem 2rem;max-width:700px;margin:0 auto}
-.give-hero h2{font-family:var(--fd);font-size:2.2rem;font-weight:700;color:var(--ww);margin-bottom:1rem;line-height:1.2}
-.give-hero h2 em{color:var(--go);font-style:italic}
-.give-hero p{font-size:1.05rem;font-weight:300;color:var(--wg);line-height:1.8;margin-bottom:0}
-.give-amounts{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:2.5rem auto;max-width:600px}
-.give-amount{display:flex;flex-direction:column;align-items:center;padding:1.25rem 1.5rem;border:1px solid rgba(212,132,42,.3);background:rgba(212,132,42,.06);min-width:130px;text-align:center}
-.give-amount .amt{font-family:var(--fd);font-size:1.8rem;font-weight:700;color:var(--go);line-height:1}
-.give-amount .lbl{font-size:.75rem;font-weight:400;color:var(--wg);margin-top:.4rem;line-height:1.4;text-transform:uppercase;letter-spacing:.05em}
-.give-cta-wrap{text-align:center;margin:1rem auto 3rem}
-.give-btn-main{display:inline-block;background:var(--go);color:#fff;font-family:var(--body);font-size:1.1rem;font-weight:600;padding:1rem 3rem;text-decoration:none;letter-spacing:.03em;transition:background .2s,transform .2s}
-.give-btn-main:hover{background:#c07820;transform:translateY(-2px)}
-.give-btn-sub{display:block;margin-top:.9rem;font-size:.8rem;font-weight:300;color:var(--wg);letter-spacing:.05em;text-transform:uppercase}
-.give-trust{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin:0 auto 4rem;max-width:600px;padding-top:2rem;border-top:1px solid rgba(255,255,255,.07)}
-.give-trust-item{display:flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:300;color:var(--wg)}
-.give-trust-item svg{color:var(--go);flex-shrink:0}
-.give-impact{background:rgba(212,132,42,.06);border-top:1px solid rgba(212,132,42,.15);padding:4rem 2rem}
-.give-impact-inner{max-width:700px;margin:0 auto;text-align:center}
-.give-impact-inner .slbl{margin-bottom:.75rem}
-.give-impact-inner h3{font-family:var(--fd);font-size:1.8rem;color:var(--ww);margin-bottom:1rem}
-.give-impact-inner p{font-size:.95rem;color:var(--wg);line-height:1.9;font-weight:300}
-.give-impact-inner blockquote{font-family:var(--fd);font-size:1.3rem;font-style:italic;color:var(--go);margin:2rem auto;max-width:500px;line-height:1.6}
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(244,239,230,.06);border:1px solid rgba(244,239,230,.06);margin:3rem 0}
+.tier{background:var(--charcoal);padding:2rem;text-align:center;transition:background .3s}
+.tier:hover{background:var(--cl)}
+.tier-amt{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--eg);margin-bottom:.5rem}
+.tier-desc{font-size:.85rem;font-weight:300;color:var(--wg);line-height:1.5}
+.give-embed{max-width:550px;margin:0 auto;padding:2.5rem;border:1px solid rgba(212,132,42,.2);background:rgba(212,132,42,.04)}
+.give-embed h3{font-family:var(--fd);font-size:1.6rem;font-weight:700;color:var(--ww);margin-bottom:.5rem;text-align:center}
+.give-embed .give-sub{font-size:.9rem;font-weight:300;color:var(--wg);text-align:center;margin-bottom:1.5rem;line-height:1.6}
+#give-lively-widget{min-height:200px}
+.give-trust{display:flex;justify-content:center;gap:1.5rem;margin-top:1rem;flex-wrap:wrap}
+.give-trust span{font-size:.75rem;color:var(--wg);font-weight:300}
+.impact-quote{font-family:var(--fd);font-size:1.15rem;font-style:italic;color:var(--parch);line-height:1.7;max-width:550px;margin:2rem auto 0;text-align:center}
+.impact-auth{font-size:.8rem;color:var(--wg);text-align:center;margin-top:.5rem}
+.monthly-note{max-width:550px;margin:2.5rem auto 0;padding:1.5rem 2rem;border:1px solid rgba(212,132,42,.15);background:rgba(212,132,42,.03);text-align:center}
+.monthly-note h4{font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--eg);margin-bottom:.5rem}
+.monthly-note p{font-size:.9rem;font-weight:300;color:var(--wgl);line-height:1.7}
+@media(max-width:600px){.tiers{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -47,65 +43,46 @@
 
 <div class="ph">
   <h1>Help Us Reach <em>More Men</em></h1>
-  <p>Rocking Life is a 501(c)(3) nonprofit. We don't charge men to join — your generosity makes this possible.</p>
+  <p>Rocking Life is a 501(c)(3) nonprofit ministry. We don’t charge men to join. Your generosity makes this possible.</p>
 </div>
 
 <section class="ps a">
-  <div class="si">
-
-    <div class="give-hero" data-a>
-      <h2>Your Giving Isn't Charity.<br><em>It's Multiplication.</em></h2>
-      <p>One man transformed becomes a husband restored, a father engaged, a leader multiplied. Every dollar goes directly toward training and equipping men to disciple others.</p>
+  <div class="si" style="max-width:1000px">
+    <div style="text-align:center" data-a>
+      <div class="slbl c">Support the Mission</div>
+      <h2 style="font-family:var(--fd);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.15;margin-bottom:1rem">Your Giving Isn’t Charity. <em style="font-style:italic;color:var(--eg)">It’s Multiplication.</em></h2>
+      <p style="font-size:1.05rem;font-weight:300;color:var(--wgl);line-height:1.8;max-width:650px;margin:0 auto">One man transformed becomes a husband restored, a father engaged, a leader multiplied. Every dollar goes directly toward training and equipping men to disciple others.</p>
     </div>
-
-    <div class="give-amounts" data-a>
-      <div class="give-amount">
-        <span class="amt">$25</span>
-        <span class="lbl">One man's<br>monthly training</span>
-      </div>
-      <div class="give-amount">
-        <span class="amt">$50</span>
-        <span class="lbl">Funds a FORGE<br>group's tools</span>
-      </div>
-      <div class="give-amount">
-        <span class="amt">$100</span>
-        <span class="lbl">Equips a new<br>ambassador</span>
-      </div>
-      <div class="give-amount">
-        <span class="amt">$250</span>
-        <span class="lbl">Launches a<br>new FORGE group</span>
+    <div class="tiers">
+      <div class="tier"><div class="tier-amt">$25</div><div class="tier-desc">One man’s monthly training</div></div>
+      <div class="tier"><div class="tier-amt">$50</div><div class="tier-desc">Funds a FORGE group’s tools</div></div>
+      <div class="tier"><div class="tier-amt">$100</div><div class="tier-desc">Equips a new disciple-maker</div></div>
+      <div class="tier"><div class="tier-amt">$250</div><div class="tier-desc">Launches a new FORGE group</div></div>
+    </div>
+    <div class="give-embed" data-a>
+      <h3>Give Today</h3>
+      <p class="give-sub">Your tax-deductible donation helps train and equip men to disciple others. 100% of gifts go toward the mission.</p>
+      <div id="give-lively-widget" class="gl-simple-donation-widget"></div>
+      <div class="give-trust">
+        <span>Secure processing via Give Lively</span>
+        <span>501(c)(3) — EIN: 99-2499686</span>
+        <span>100% goes to the mission</span>
       </div>
     </div>
-
-    <div class="give-cta-wrap" data-a>
-      <a href="https://secure.givelively.org/donate/99-2499686" target="_blank" rel="noopener" class="give-btn-main">Give Now</a>
-      <span class="give-btn-sub">Secure &middot; Tax-deductible &middot; One-time or monthly</span>
+    <div class="monthly-note" data-a>
+      <h4>Why Monthly Giving Matters</h4>
+      <p>Monthly giving provides the consistent support that allows us to train men year-round. A recurring gift of any size means we can plan ahead, launch new FORGE groups, and equip more men to disciple others without interruption.</p>
     </div>
-
-    <div class="give-trust" data-a>
-      <div class="give-trust-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Secure processing via Give Lively
-      </div>
-      <div class="give-trust-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-        501(c)(3) &mdash; EIN: 99-2499686
-      </div>
-      <div class="give-trust-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-        100% goes to the mission
-      </div>
-    </div>
-
   </div>
 </section>
 
-<section class="give-impact">
-  <div class="give-impact-inner" data-a>
-    <div class="slbl">The Impact</div>
-    <h3>Lives Changed. Families Restored.</h3>
-    <p>We've seen men walk in ready to end their marriages and walk out with a new vision for their families. Men who were isolated find brotherhood. Leaders who were drifting find purpose. This is what your giving makes possible.</p>
-    <blockquote>"We give because we've seen the fruit — in our own lives, and in the lives of our brothers."</blockquote>
+<section class="ps">
+  <div class="si" style="text-align:center" data-a>
+    <div class="slbl c">The Impact</div>
+    <h3 style="font-family:var(--fd);font-size:1.6rem;font-weight:700;color:var(--ww);margin-bottom:1rem">Lives Changed. Families Restored.</h3>
+    <p style="font-size:1rem;font-weight:300;color:var(--wgl);line-height:1.8;max-width:600px;margin:0 auto">We’ve seen men walk in ready to end their marriages and walk out with a new vision for their families. Men who were isolated find deep friendships. Leaders who were drifting find purpose. This is what your giving makes possible.</p>
+    <p class="impact-quote">“We give because we’ve seen the fruit — in our own lives, and in the lives of the men around us.”</p>
+    <div class="impact-auth">— Rocking Life Supporter</div>
   </div>
 </section>
 
@@ -123,5 +100,6 @@
   <div class="floc">Spring, Texas &middot; A 501(c)(3) nonprofit ministry</div>
 </footer>
 <script src="/js/main.js"></script>
+<script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/simple_donation/99-2499686.js?show_suggested_amount_buttons=false&show_in_honor_of=false&address_required=false&has_required_custom_question=null';document.getElementsByTagName('head')[0].appendChild(gl);</script>
 </body>
 </html>
