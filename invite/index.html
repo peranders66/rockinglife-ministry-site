@@ -1,172 +1,267 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rocking Life | You Were Invited for a Reason</title>
-<meta name="description" content="A weekly community of Christian men committed to being transformed by the Holy Spirit and equipped to disciple others. Invite only.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<style>
-.inv-banner{display:none;align-items:center;justify-content:center;gap:.5rem;margin-bottom:1.5rem;padding:.65rem 1.5rem;background:rgba(212,132,42,.1);border:1px solid rgba(212,132,42,.2);border-radius:100px;font-size:.9rem;color:var(--parch);opacity:0;animation:fu 1s ease .2s forwards}
-.inv-banner.on{display:inline-flex}
-.inv-banner .inv-name{font-weight:600;color:var(--eg)}
-.tl{display:grid;grid-template-columns:4px 1fr;gap:2.5rem}
-.tl-line{background:linear-gradient(180deg,var(--ember),var(--ed),transparent);border-radius:2px}
-.tl-text blockquote{font-family:var(--fd);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:400;font-style:italic;line-height:1.7;color:var(--parch);margin-bottom:1.5rem}
-.tl-auth{font-size:.9rem;color:var(--wg)}.tl-auth strong{color:var(--eg);font-weight:600}
-.tl-ctx{margin-top:1rem;font-size:.9rem;font-weight:300;color:var(--wgl);line-height:1.7}
-.cost-line{font-family:var(--fd);font-size:1.25rem;font-style:italic;color:var(--parch);line-height:1.6;padding:1.5rem 0;margin:1rem 0;border-top:1px solid rgba(212,132,42,.15);border-bottom:1px solid rgba(212,132,42,.15)}
-.forge-commit{margin-top:3rem;padding:2.5rem;border:1px solid rgba(212,132,42,.2);background:rgba(212,132,42,.04)}
-.forge-commit h3{font-family:var(--fd);font-size:1.4rem;font-weight:700;color:var(--ww);margin-bottom:1rem}
-.forge-commit p{font-size:1rem;font-weight:300;line-height:1.8;color:var(--wgl);margin-bottom:.75rem}
-.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:left;margin-top:2.5rem}
-.t-item h4{font-family:var(--fd);font-size:1.2rem;font-weight:700;color:var(--ww);margin-bottom:.5rem}
-.t-item p{font-size:.9rem;font-weight:300;line-height:1.7;color:var(--wg)}
-.t-num{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--ember);opacity:.3;margin-bottom:.5rem;line-height:1}
-.tc-cards{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
-.tc-card{padding:2.5rem;border:1px solid rgba(212,132,42,.12);background:rgba(212,132,42,.03)}
-.tc-card blockquote{font-family:var(--fd);font-size:1.1rem;font-style:italic;line-height:1.7;color:var(--parch);margin-bottom:1.25rem}
-.tc-auth{font-size:.85rem;color:var(--wg)}.tc-auth strong{color:var(--eg);font-weight:600}
-.cta-note{margin-top:1.5rem;font-size:.8rem;color:var(--wg);font-weight:300}
-.cal-wrapper{max-width:700px;margin:2rem auto 0;min-height:500px;border:1px solid rgba(212,132,42,.15);padding:1.5rem;background:rgba(26,23,20,.5)}
-@media(max-width:900px){.t-grid,.tc-cards{grid-template-columns:1fr}}
-@media(max-width:600px){.tl{grid-template-columns:1fr}.tl-line{display:none}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start the Fire — Rocking Life Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --charcoal: #1a1714; --cl: #2a2520; --cm: #221f1b; --ember: #d4842a;
+      --eg: #e8a04c; --ed: #b5621a; --ww: #f5efe6; --wg: #a89e91;
+      --wgl: #c4b9ab; --parch: #ede4d4; --iron: #3d3832;
+      --fd: 'Cormorant Garamond', Georgia, serif; --fb: 'Outfit', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: var(--fb); background: var(--charcoal); color: var(--ww); -webkit-font-smoothing: antialiased; }
+    .grain { position: fixed; inset: 0; pointer-events: none; z-index: 999; opacity: .035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 3rem; display: flex; align-items: center; justify-content: space-between; background: rgba(26,23,20,.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(212,132,42,.15); }
+    .nav-logo { font-family: var(--fd); font-size: 1.6rem; font-weight: 700; color: var(--ww); text-decoration: none; letter-spacing: .02em; }
+    .nav-logo span { color: var(--ember); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+    .nav-links a { color: var(--wgl); text-decoration: none; font-size: .85rem; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; transition: color .3s; }
+    .nav-links a:hover { color: var(--ember); }
+    .nav-cta { background: var(--ember) !important; color: var(--charcoal) !important; padding: .6rem 1.5rem; border-radius: 2px; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--eg) !important; }
+    .mob-btn { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .mob-btn span { width: 24px; height: 1.5px; background: var(--ww); }
+    @keyframes fu { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fe { 0% { opacity: 0; transform: translateY(0) scale(1); } 10% { opacity: .9; } 50% { opacity: .6; } 90% { opacity: .1; } 100% { opacity: 0; transform: translateY(-100vh) scale(.3); } }
+    @keyframes sp { 0%, 100% { opacity: .4; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(1.2); } }
+    [data-a] { opacity: 0; transform: translateY(30px); transition: opacity .8s, transform .8s; }
+    [data-a].v { opacity: 1; transform: translateY(0); }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; overflow: hidden; padding: 2rem; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 80%, rgba(212,132,42,.12) 0%, transparent 70%), radial-gradient(ellipse 50% 40% at 30% 60%, rgba(181,98,26,.08) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 70% 50%, rgba(232,160,76,.06) 0%, transparent 60%); pointer-events: none; }
+    .ef { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .ep { position: absolute; width: 3px; height: 3px; border-radius: 50%; opacity: 0; animation: fe linear infinite; }
+    .hero-c { position: relative; z-index: 2; max-width: 850px; }
+    .hero-ey { font-size: .8rem; font-weight: 500; letter-spacing: .25em; text-transform: uppercase; color: var(--ember); margin-bottom: 2rem; opacity: 0; animation: fu 1s ease .3s forwards; }
+    .hero h1 { font-family: var(--fd); font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 700; line-height: 1.05; margin-bottom: 1.5rem; opacity: 0; animation: fu 1s ease .5s forwards; }
+    .hero h1 em { font-style: italic; color: var(--eg); }
+    .hero-s { font-size: 1.2rem; font-weight: 300; color: var(--wgl); line-height: 1.7; max-width: 640px; margin: 0 auto 2rem; opacity: 0; animation: fu 1s ease .7s forwards; }
+    .hero-sub { font-size: .95rem; font-weight: 300; color: var(--wg); line-height: 1.6; max-width: 540px; margin: 0 auto 2.5rem; opacity: 0; animation: fu 1s ease .85s forwards; }
+    .btn { display: inline-flex; align-items: center; gap: .5rem; background: var(--ember); color: var(--charcoal); padding: 1rem 2.25rem; font-family: var(--fb); font-size: .95rem; font-weight: 600; letter-spacing: .04em; text-decoration: none; border: none; border-radius: 2px; cursor: pointer; transition: all .3s; }
+    .btn:hover { background: var(--eg); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(212,132,42,.3); }
+    .btn-h { opacity: 0; animation: fu 1s ease .9s forwards; }
+    .scroll-h { position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; opacity: 0; animation: fu 1s ease 1.2s forwards; }
+    .scroll-l { width: 1px; height: 48px; background: linear-gradient(180deg, var(--ember) 0%, transparent 100%); animation: sp 2s ease infinite; }
+    .ps { padding: 8rem 2rem; }
+    .ps.a { background: var(--cl); }
+    .ps .si { max-width: 900px; margin: 0 auto; }
+    .slbl { font-family: var(--fb); font-size: .75rem; font-weight: 500; letter-spacing: .25em; text-transform: uppercase; color: var(--ember); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; }
+    .slbl::before { content: ''; width: 2rem; height: 1px; background: var(--ember); }
+    .slbl.c { justify-content: center; }
+    .slbl.c::before { display: none; }
+    .cg { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3rem; }
+    .cb h3 { font-family: var(--fd); font-size: 1.4rem; font-weight: 700; color: var(--ww); margin-bottom: 1rem; }
+    .cb p { font-size: 1rem; font-weight: 300; line-height: 1.8; color: var(--wgl); }
+    .sh { font-family: var(--fd); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; }
+    .sh em { font-style: italic; color: var(--eg); }
+    .fc { display: grid; grid-template-columns: 4px 1fr; gap: 2.5rem; }
+    .fl { background: linear-gradient(180deg, var(--ember), var(--ed), transparent); border-radius: 2px; }
+    .ft h2 { font-family: var(--fd); font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem; color: var(--ww); }
+    .ft p { font-size: 1.05rem; font-weight: 300; line-height: 1.8; color: var(--wgl); margin-bottom: 1.25rem; }
+    .tg { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+    .tc { background: var(--cl); border: 1px solid rgba(212,132,42,.12); padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .tv { position: relative; width: 100%; padding-bottom: 56.25%; background: #000; overflow: hidden; }
+    .tv iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+    .tv-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--cm); cursor: pointer; }
+    .tv-placeholder::after { content: ''; width: 0; height: 0; border-style: solid; border-width: 18px 0 18px 32px; border-color: transparent transparent transparent var(--ember); margin-left: 6px; }
+    .tq { font-family: var(--fd); font-size: 1.1rem; font-style: italic; color: var(--parch); line-height: 1.6; flex: 1; }
+    .ta { font-size: .8rem; font-weight: 500; color: var(--ember); letter-spacing: .1em; text-transform: uppercase; }
+    .ff { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(244,239,230,.06); border: 1px solid rgba(244,239,230,.06); margin-top: 2.5rem; }
+    .fi { background: var(--charcoal); padding: 2.5rem; transition: background .3s; }
+    .fi:hover { background: var(--cl); }
+    .fi h3 { font-family: var(--fd); font-size: 1.3rem; font-weight: 700; color: var(--eg); margin-bottom: 1.25rem; }
+    .fi ul { list-style: none; display: flex; flex-direction: column; gap: .75rem; }
+    .fi ul li { font-size: .95rem; font-weight: 300; line-height: 1.6; color: var(--wgl); padding-left: 1.25rem; position: relative; }
+    .fi ul li::before { content: '—'; position: absolute; left: 0; color: var(--ember); font-size: .8rem; top: .1em; }
+    .fi ul.no li::before { content: '×'; color: var(--wg); }
+    .eq { font-family: var(--fd); font-size: 1.25rem; font-style: italic; color: var(--parch); line-height: 1.6; padding: 1.5rem 0; border-top: 1px solid rgba(212,132,42,.15); border-bottom: 1px solid rgba(212,132,42,.15); margin: 2rem 0; }
+    .fa { font-size: .85rem; color: var(--wg); font-weight: 400; margin-top: .75rem; }
+    .fa strong { color: var(--ember); font-weight: 600; }
+    .cal-section { background: var(--cl); border: 1px solid rgba(212,132,42,.2); padding: 3rem; text-align: center; margin-top: 3rem; }
+    .cal-section h2 { font-family: var(--fd); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; margin-bottom: 1rem; }
+    .cal-section h2 em { font-style: italic; color: var(--eg); }
+    .cal-section p { font-size: 1rem; font-weight: 300; color: var(--wgl); line-height: 1.7; max-width: 500px; margin: 0 auto 2rem; }
+    .cal-meta { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .cal-item { display: flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--wg); }
+    .cal-item span { color: var(--ember); font-size: 1rem; }
+    footer { padding: 3rem 2rem; border-top: 1px solid rgba(244,239,230,.06); text-align: center; }
+    .flogo { font-family: var(--fd); font-size: 1.3rem; font-weight: 700; color: var(--ww); margin-bottom: .5rem; }
+    .flogo span { color: var(--ember); }
+    .ftag { font-size: .8rem; font-weight: 300; color: var(--wg); margin-bottom: 1.5rem; }
+    .flinks { display: flex; justify-content: center; gap: 2rem; list-style: none; margin-bottom: 2rem; flex-wrap: wrap; }
+    .flinks a { font-size: .8rem; color: var(--wg); text-decoration: none; transition: color .3s; }
+    .flinks a:hover { color: var(--ember); }
+    .fcopy { font-size: .75rem; color: rgba(168,158,145,.5); }
+    .floc { font-size: .75rem; color: rgba(168,158,145,.4); margin-top: .5rem; }
+    @media (max-width: 900px) { nav { padding: 1rem 1.5rem; } .nav-links { display: none; } .mob-btn { display: flex; } .cg, .ff, .tg { grid-template-columns: 1fr; } .tg { gap: 2rem; } }
+    @media (max-width: 600px) { .hero { padding: 6rem 1.5rem 3rem; } .fc { grid-template-columns: 1fr; gap: 0; } .fl { display: none; } .cal-section { padding: 2rem 1.5rem; } }
+  </style>
 </head>
 <body>
-<div class="grain"></div>
-<nav>
-  <a href="/" class="nav-logo">Rocking <span>Life</span></a>
-  <ul class="nav-links">
-    <li><a href="/about/">About</a></li>
-    <li><a href="/forge-groups/">FORGE Groups</a></li>
-    <li><a href="/give/" class="nav-cta">Support Us</a></li>
-  </ul>
-  <button class="mob-btn" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
-
-<section class="hero">
-  <div class="ef" id="ef"></div>
-  <div class="hero-c">
-    <div class="inv-banner" id="invB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span><span class="inv-name" id="invN"></span> invited you</span></div>
-    <div class="hero-ey">Invite-Only Community</div>
-    <h1>Someone You Trust Believes You're <em>Ready</em></h1>
-    <p class="hero-s">You're on this page because a man in your life saw something in you and decided you needed to be here. Rocking Life is a weekly community of Christian men being transformed by the Holy Spirit and equipped to disciple others. This isn't a program. It's a commitment. And it will change your life.</p>
-    <a href="#join" class="btn btn-h">Join the Next Webinar &rarr;</a>
-  </div>
-  <div class="scroll-h"><div class="scroll-l"></div></div>
-</section>
-
-<section class="ps a">
-  <div class="si">
-    <div class="slbl">This Is What Happens</div>
-    <div class="tl" data-a>
-      <div class="tl-line"></div>
-      <div class="tl-text">
-        <blockquote>Every time you have doubt about Rocking Life, I want you to remember me. Todd brought me to the group. But you created the group that he brought me to. And it has changed my life.</blockquote>
-        <div class="tl-auth"><strong>Joe</strong> &mdash; Rocking Life Member</div>
-        <p class="tl-ctx">Joe and Todd were friends for 15 years. They never once talked about faith. When Todd invited Joe to his FORGE group, Joe had a panic attack in the parking lot and almost drove away. He stayed. Within months, the Holy Spirit transformed both men's lives completely. Today they talk about God every single day.</p>
+  <div class="grain"></div>
+  <nav>
+    <a href="/" class="nav-logo">Rocking <span>Life</span></a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li><a href="/forge-groups">FORGE Groups</a></li>
+      <li><a href="/give">Support Us</a></li>
+      <li><a href="#register" class="nav-cta">Reserve a Spot</a></li>
+    </ul>
+    <button class="mob-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <section class="hero">
+    <div class="ef" id="embers"></div>
+    <div class="hero-c">
+      <p class="hero-ey" id="hero-eyebrow">A Webinar for Men Ready to Lead</p>
+      <h1 id="hero-headline">Start the <em>Fire</em></h1>
+      <p class="hero-s" id="hero-subhead">How men change other men's lives.</p>
+      <p class="hero-sub" id="hero-body"></p>
+      <div class="btn-h"><a href="#register" class="btn">Reserve Your Spot &rarr;</a></div>
+    </div>
+    <div class="scroll-h"><div class="scroll-l"></div></div>
+  </section>
+  <section class="ps">
+    <div class="si">
+      <div class="fc" data-a>
+        <div class="fl"></div>
+        <div class="ft">
+          <p class="slbl">What This Is</p>
+          <h2>One hour that might change<br><em>everything that comes after it.</em></h2>
+          <p>Rocking Life is built on one idea: a man who's been transformed doesn't stay quiet about it. He finds the next man. That's what FORGE groups are &mdash; small groups of up to 12 men who meet weekly. Honest conversations. Real accountability. No pretending.</p>
+          <p>Men in these groups are reading their Bible for the first time in years. Calling their fathers. Praying with their kids. Some are starting their own groups. One man at a time. One fire at a time.</p>
+          <p>In this webinar, Per Angerstig &mdash; founder of Rocking Life &mdash; will walk you through how this started, what a FORGE group actually looks like from the inside, and where you might fit in the multiplication model.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="ps">
-  <div class="si" data-a>
-    <div class="slbl">The Honest Truth</div>
-    <h2 style="font-family:var(--fd);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;line-height:1.15;margin-bottom:1.5rem">You Go to Church. You Read Your Bible. And Something Is Still Missing.</h2>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.8;color:var(--wgl);margin-bottom:1.25rem">You try to lead your family well. You serve when you're asked. You know what the Bible says about how men should live. But the faith feels routine. The friendships stay shallow. And when Sunday's over, you're back to carrying it alone.</p>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.8;color:var(--wgl);margin-bottom:1.25rem">Most Christian men don't have a single friend they can be fully honest with. Not one. Not at church. Not at work. Not anywhere. And the longer that goes on, the more you settle for going through the motions.</p>
-    <div class="cost-line">What does another year of this look like? The same shallow conversations. The same quiet frustration. The same distance between who you are and who God is calling you to become.</div>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.8;color:var(--wgl)">That's not what you were made for. And the man who sent you this link knows it.</p>
-  </div>
-</section>
-
-<section class="ps a">
-  <div class="si">
-    <div class="slbl">The Heart of Rocking Life</div>
-    <h2 style="font-family:var(--fd);font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.15;margin-bottom:1rem" data-a>FORGE Groups: Where Transformation Happens</h2>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.8;color:var(--wgl);max-width:700px" data-a>Everything in Rocking Life centers on one thing: a small group of men who meet every week to grow deeper in faith, build real friendships, and let the Holy Spirit do the work. We call them FORGE groups. They follow a biblical discipleship model: life-on-life, in person, over time.</p>
-    <div class="ff">
-      <div class="fi"><h3>Weekly. Every Week.</h3><p>FORGE groups meet every single week because consistency builds the trust that makes transformation possible.</p></div>
-      <div class="fi"><h3>Small. Up to 12 Men.</h3><p>Big enough for different perspectives. Small enough that you can't hide. Every man in the room is known.</p></div>
-      <div class="fi"><h3>Deep Friendships. Real Purpose.</h3><p>Men come looking for direction, connection, and something that actually matters. FORGE groups deliver all three — and the friendships you build here last a lifetime.</p></div>
-      <div class="fi"><h3>The Holy Spirit Leads.</h3><p>The group leader creates the space. The men show up honestly. But the transformation? That's God's work. We create the conditions and trust Him with the outcome.</p></div>
+  </section>
+  <section class="ps a">
+    <div class="si">
+      <p class="slbl c" data-a>In This Webinar</p>
+      <h2 class="sh" style="text-align:center;max-width:700px;margin:0 auto 1rem;" data-a>Four things Per will walk you through</h2>
+      <div class="cg" style="margin-top:3rem;">
+        <div class="cb" data-a><h3>01 &mdash; How This Started</h3><p>A fire in Seattle in 1999 and seven men who showed up in 2015. The ember vision that drives everything Rocking Life does.</p></div>
+        <div class="cb" data-a><h3>02 &mdash; What a FORGE Group Is</h3><p>What actually happens inside the room. The 75-minute structure. Why it works when other men's groups don't. What the Holy Spirit does when men stop pretending.</p></div>
+        <div class="cb" data-a><h3>03 &mdash; The Multiplication Model</h3><p>How one group becomes two. How two become four. Why third-generation multiplication is the true measure of success &mdash; and what it looks like in practice.</p></div>
+        <div class="cb" data-a><h3>04 &mdash; What the Next Step Looks Like for You</h3><p>This isn't a general presentation. Per will be direct with you about whether this is a fit &mdash; and what happens if it is.</p></div>
+      </div>
     </div>
-    <div class="forge-commit" data-a>
-      <h3>What This Asks of You</h3>
-      <p>An hour and a half every week. Honesty about where you really are. Willingness to read Scripture daily. The courage to let other men see the real you. And over time, the willingness to do this for someone else.</p>
-      <p>This doesn't cost you money. Rocking Life is a nonprofit ministry and membership is free. But it will cost you your comfort, your masks, and your excuses. That's the real price of becoming who God created you to be.</p>
+  </section>
+  <section class="ps">
+    <div class="si">
+      <p class="slbl c" data-a>Real Men. Real Stories.</p>
+      <h2 class="sh" style="text-align:center;max-width:600px;margin:0 auto;" data-a>This is what it looks like<br><em>when it works.</em></h2>
+      <div class="tg">
+        <div class="tc" data-a>
+          <div class="tv"><div class="tv-placeholder" onclick="loadVideo(this,'https://player.vimeo.com/video/VIDEO_ID_1?autoplay=1')" aria-label="Play Joe's story"></div></div>
+          <p class="tq" style="font-size:.95rem;font-style:normal;line-height:1.7;">Joe and Todd had been friends for 15 years.<br>They'd never once talked about faith.<br>Todd invited Joe to a Friday morning group. Joe almost didn't show up.<br>Two months later, he stood at his mother's funeral and publicly professed Christ for the first time.</p>
+          <p class="ta">Joe L. &mdash; Windvale FORGE</p>
+        </div>
+        <div class="tc" data-a>
+          <div class="tv"><div class="tv-placeholder" onclick="loadVideo(this,'https://player.vimeo.com/video/VIDEO_ID_2?autoplay=1')" aria-label="Play testimonial"></div></div>
+          <p class="tq">"We had been friends and tennis buddies for over 15 years and never talked about anything meaningful. That has changed."</p>
+          <p class="ta">Joe L. &mdash; Windvale FORGE</p>
+        </div>
+        <div class="tc" data-a>
+          <div class="tv"><div class="tv-placeholder" onclick="loadVideo(this,'https://player.vimeo.com/video/VIDEO_ID_3?autoplay=1')" aria-label="Play testimonial"></div></div>
+          <p class="tq">"I hadn't had a real conversation with another man in years. Not a complaint session. An actual conversation where someone asked how I was doing and meant it."</p>
+          <p class="ta">Member &mdash; Rocking Life</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="ps" style="text-align:center;position:relative;overflow:hidden">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 50% 40% at 50% 80%,rgba(212,132,42,.06) 0%,transparent 60%);pointer-events:none"></div>
-  <div class="si" style="position:relative;z-index:2" data-a>
-    <div class="slbl c">What Changes</div>
-    <h2 style="font-family:var(--fd);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;line-height:1.15;margin-bottom:1.5rem">Discipled. Transformed. <em style="font-style:italic;color:var(--eg)">Equipped to Disciple Others.</em></h2>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.8;color:var(--wgl);margin-bottom:2.5rem;max-width:650px;margin-left:auto;margin-right:auto">The goal isn't to attend a group. The goal is to be so transformed by the Holy Spirit that you begin doing for other men what someone just did for you.</p>
-    <div class="t-grid">
-      <div class="t-item"><div class="t-num">01</div><h4>You Get Discipled</h4><p>You'll be grounded in Scripture, held accountable by men who care, and challenged to close the gap between what you believe and how you live.</p></div>
-      <div class="t-item"><div class="t-num">02</div><h4>You Get Transformed</h4><p>Not by a program. By the Holy Spirit working through honest relationships with men who refuse to let you stay comfortable. This is what Jesus modeled.</p></div>
-      <div class="t-item"><div class="t-num">03</div><h4>You Disciple Others</h4><p>As you grow, you'll be equipped to invite another man in, walk alongside him, and point him to Christ. Every disciple becomes a disciple-maker. That's the mission.</p></div>
+  </section>
+  <section class="ps a">
+    <div class="si">
+      <p class="slbl c" data-a>Be Honest With Yourself</p>
+      <div class="ff" data-a>
+        <div class="fi">
+          <h3>This is for you if &mdash;</h3>
+          <ul>
+            <li>You've been a Christian for a while and something still feels missing</li>
+            <li>You want to go deeper with other men, not just wider</li>
+            <li>You've thought about leading something but didn't know what</li>
+            <li>You know a man who is struggling and you want to be the one who shows up for him</li>
+            <li>You're in a different geography and have no group to join locally</li>
+          </ul>
+        </div>
+        <div class="fi">
+          <h3>This is not for you if &mdash;</h3>
+          <ul class="no">
+            <li>You're looking for a program to attend and check off</li>
+            <li>You're looking for someone to hand you a formula</li>
+            <li>You've already decided nothing is going to change</li>
+            <li>You're not ready to think about who you might eventually lead</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="ps a">
-  <div class="si" data-a>
-    <div class="slbl c">Men Who Said Yes</div>
-    <div class="tc-cards">
-      <div class="tc-card"><blockquote>"I didn't think I had time to join. But saying yes has deeply changed my life. The friendships, the growth, the impact — it's hard to put into words."</blockquote><div class="tc-auth"><strong>Paul</strong> &mdash; Tennessee</div></div>
-      <div class="tc-card"><blockquote>"I didn't feel qualified. But being surrounded by godly men has changed my life, my faith, and my family."</blockquote><div class="tc-auth"><strong>Tommy</strong> &mdash; Florida</div></div>
+  </section>
+  <section class="ps">
+    <div class="si" style="max-width:700px;">
+      <div class="eq" data-a>"My life changed that day. Not in some dramatic display of God's power, but in a feeling of total peace and surrender."</div>
+      <p class="fa" data-a><strong>Joe L.</strong> &mdash; Windvale FORGE &middot; September 19, 2025</p>
     </div>
-  </div>
-</section>
-
-<section class="ps" style="text-align:center">
-  <div class="si">
-    <p class="st">"Go therefore and make disciples of all the nations [help the people to learn of Me, believe in Me, and obey My words], baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything that I have commanded you; and lo, I am with you always [remaining with you perpetually — regardless of circumstance, and on every occasion], even to the end of the age."</p>
-    <div class="sr">Matthew 28:19-20 (AMP)</div>
-  </div>
-</section>
-
-<section class="ps a" style="text-align:center;position:relative;overflow:hidden" id="join">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 100%,rgba(212,132,42,.1) 0%,transparent 60%);pointer-events:none"></div>
-  <div class="si" style="max-width:750px;position:relative;z-index:2" data-a>
-    <div class="slbl c">Take the First Step</div>
-    <h2 style="font-family:var(--fd);font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">You Were Invited <em style="font-style:italic;color:var(--eg)">for a Reason</em></h2>
-    <p style="font-size:1.05rem;font-weight:300;color:var(--wgl);line-height:1.8;margin-bottom:1.25rem">The man who sent you this page knows you. He's been where you are. And he wouldn't have shared this with you if he didn't believe you were ready for something more.</p>
-    <p style="font-size:1.05rem;font-weight:300;color:var(--wgl);line-height:1.8;margin-bottom:1.25rem">Your next step is simple. Pick a time below to join a live webinar with our founder Per. Hear the vision. Ask your questions. See if this is for you.</p>
-    <div class="cal-wrapper">
-      <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-ambassador-webinar"></div>
+  </section>
+  <section class="ps a" id="register">
+    <div class="si">
+      <div class="cal-section" data-a>
+        <p class="slbl c">Start the Fire</p>
+        <h2>Reserve Your Spot in the<br><em>Next Webinar</em></h2>
+        <p>One hour with Per. Free. No pressure, no pitch &mdash; just an honest conversation about what this is and whether it's for you.</p>
+        <div class="cal-meta">
+          <div class="cal-item"><span>&#9678;</span> Free &mdash; no cost</div>
+          <div class="cal-item"><span>&#9678;</span> 60 minutes</div>
+          <div class="cal-item"><span>&#9678;</span> Zoom &mdash; attend from anywhere</div>
+          <div class="cal-item"><span>&#9678;</span> For men who are ready</div>
+        </div>
+        <div style="width:100%;height:700px;overflow:scroll;border-radius:2px;" id="my-cal-inline-ambassador-webinar"></div>
+        <script type="text/javascript">
+          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+          Cal("init", "ambassador-webinar", {origin:"https://app.cal.com"});
+          Cal.ns["ambassador-webinar"]("inline", { elementOrSelector:"#my-cal-inline-ambassador-webinar", config: {"layout":"month_view","theme":"dark"}, calLink: "per-rockinglife.org/ambassador-webinar" });
+          Cal.ns["ambassador-webinar"]("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#292929"},"dark":{"cal-brand":"#d4842a"}},"hideEventTypeDetails":true,"layout":"month_view"});
+        </script>
+      </div>
     </div>
-    <p class="cta-note" id="ctaNote">Invite-only community. You're here because someone believed in you.</p>
-  </div>
-</section>
-
-<footer>
-  <div class="flogo">Rocking <span>Life</span></div>
-  <div class="ftag">One friend. One conversation. One transformed life at a time.</div>
-  <ul class="flinks">
-    <li><a href="/">About Rocking Life</a></li>
-    <li><a href="mailto:per@rockinglife.org">Contact</a></li>
-  </ul>
-  <div class="fcopy">&copy; 2025 Rocking Life Man Cave Inc. A 501(c)(3) nonprofit ministry. Spring, Texas.</div>
-</footer>
-<script src="/js/main.js"></script>
-<script>
-(function(){var p=new URLSearchParams(window.location.search),u=p.get('utm_source'),n=p.get('invitation_from');if(n){var nm=decodeURIComponent(n),b=document.getElementById('invB'),ne=document.getElementById('invN');if(b&&ne){ne.textContent=nm;b.classList.add('on')}var cn=document.getElementById('ctaNote');if(cn)cn.textContent=nm+' knows you. He believes you are ready. This is your next step.';document.title=nm+' invited you to Rocking Life'}})();
-</script>
-<script type="text/javascript">
-(function(C,A,L){let p=function(a,ar){a.q.push(ar);};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true;}if(ar[0]===L){const api=function(){p(api,arguments);};const namespace=ar[1];api.q=api.q||[];if(typeof namespace==="string"){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,["initNamespace",namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,"https://app.cal.com/embed/embed.js","init");
-Cal("init","ambassador-webinar",{origin:"https://app.cal.com"});
-Cal.ns["ambassador-webinar"]("inline",{elementOrSelector:"#my-cal-inline-ambassador-webinar",config:{"layout":"month_view","useSlotsViewOnSmallScreen":"true"},calLink:"per-rockinglife.org/ambassador-webinar"});
-Cal.ns["ambassador-webinar"]("ui",{"cssVarsPerTheme":{"light":{"cal-brand":"#292929"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
-</script>
+  </section>
+  <footer>
+    <div class="flogo">Rocking <span>Life</span></div>
+    <p class="ftag">One friend. One conversation. One transformed life at a time.</p>
+    <ul class="flinks">
+      <li><a href="/about">About</a></li>
+      <li><a href="/forge-groups">FORGE Groups</a></li>
+      <li><a href="/give">Donate</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+    </ul>
+    <p class="fcopy">&copy; 2025 Rocking Life Man Cave Inc. All rights reserved. EIN: 99-2499686</p>
+    <p class="floc">Spring, Texas &middot; A 501(c)(3) nonprofit ministry</p>
+  </footer>
+  <script>
+    function getParam(name) { return new URLSearchParams(window.location.search).get(name); }
+    const inviterName = getParam('invitation_from');
+    const heroBody = document.getElementById('hero-body');
+    if (inviterName) {
+      heroBody.innerHTML = '<strong style="color:var(--parch)">' + inviterName + '</strong> sent you this because he thinks you're ready.<br>He's been in a FORGE group. He's seen what happens when men stop pretending and start showing up for each other.<br>He wanted you to see it too.';
+    } else {
+      heroBody.innerHTML = 'You landed here because something's been stirring.<br>Maybe you've been a Christian for years and still feel like something's missing.<br>Maybe you're ready to go deeper &mdash; with God and with other men.';
+    }
+    const ef = document.getElementById('embers');
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div'); p.className = 'ep';
+      p.style.cssText = 'left:' + (Math.random()*100) + '%;bottom:' + (Math.random()*30) + '%;background:hsl(' + (25+Math.random()*20) + ',80%,' + (50+Math.random()*20) + '%);animation-duration:' + (4+Math.random()*6) + 's;animation-delay:' + (Math.random()*5) + 's;width:' + (2+Math.random()*3) + 'px;height:' + (2+Math.random()*3) + 'px;';
+      ef.appendChild(p);
+    }
+    const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('v'); }); }, { threshold: 0.12 });
+    document.querySelectorAll('[data-a]').forEach(el => obs.observe(el));
+    function loadVideo(placeholder, src) { const iframe = document.createElement('iframe'); iframe.src = src; iframe.allow = 'autoplay; fullscreen; picture-in-picture'; iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;'; placeholder.parentNode.appendChild(iframe); placeholder.remove(); }
+    document.querySelector('.mob-btn').addEventListener('click', function() { const nav = document.querySelector('.nav-links'); nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex'; nav.style.flexDirection = 'column'; nav.style.position = 'absolute'; nav.style.top = '100%'; nav.style.left = '0'; nav.style.right = '0'; nav.style.background = 'rgba(26,23,20,.98)'; nav.style.padding = '1.5rem 2rem'; nav.style.borderBottom = '1px solid rgba(212,132,42,.15)'; });
+  </script>
 </body>
 </html>
